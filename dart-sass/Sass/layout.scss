@@ -141,7 +141,8 @@ nav, li {
 
     .fa-heart {
         position: relative;
-        right: 4rem;
+        right: 3.9rem;
+        object-fit: contain;
     }
 }
 
@@ -173,7 +174,7 @@ nav, li {
     h3 {
         font-size: 1rem;
         position: relative;
-        right: 155px;
+        right: 40%;
     }
 }
 
@@ -264,8 +265,8 @@ nav, li {
     .dish {
         h3 {
             position: relative;
-            right: 330px;
-            width: 2%;
+            right: 42%;
+            width: 1.7%;
         }
     }
 
@@ -289,13 +290,21 @@ nav, li {
     .dish {
         h3{
             position: relative;
-            right: 435px;
+            right: 42%;
         }
     }
 
     .dish__cards {
         .check__box {
             width: 8%;
+
+            i {
+                font-size: 1.3rem;
+            }
+        }
+
+        p, h4, h5 {
+            font-size: 1.1rem;
         }
 
         &:hover h5 {
@@ -360,10 +369,14 @@ nav, li {
 
         h3 {
             position: absolute;
-            left: 160px;
+            left: 12%;
             top: 700px;
             height: 50px;
         }
+    }
+
+    .dish__cards .check__box i {
+        font-size: 1.5rem;
     }
 
     .restaurants a {
