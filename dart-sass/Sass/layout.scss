@@ -71,13 +71,6 @@ body {
 
 }
 
-.vector__box {
-    margin-left: auto;
-    position: relative;
-    bottom: 37px;
-    right: 10px;
-}
-
 .restaurants {
     background-color: #F6F6F6;
     display: flex;
@@ -178,82 +171,6 @@ nav, li {
     }
 }
 
-.dish__cards {
-    padding: 1rem;
-    margin: 1rem 0.5rem;
-    width: 88%;
-    gap: 0;
-    border-radius: 15.04px;
-    background-color: #FFFFFF;
-    box-shadow: 0px 4.01px 15.04px 0px #0000001A;
-    cursor: pointer;
-    display: flex;
-    flex-direction: column;
-    position: relative;
-    overflow: hidden;
-
-    .cards__price {
-        display: flex;
-        justify-content: flex-end;
-        align-items: center;
-        padding-left: 0.5rem;
-        width: 100%;
-        margin-top: -20px;
-    }
-
-    .check__box {
-        width: 17%;
-        height: 100%;
-        background-color: #99E2D0;
-        border-radius: 0 15.04px 15.04px 0;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        opacity: 0;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transform: translateX(100%);
-        transition: transform 0.5s ease, opacity 0.5s ease;
-    }
-
-    .check__box i {
-        color: white;
-        display: block;
-    }
-
-    h5 {
-        transition: transform 0.5s ease;
-        margin: 0;
-        display: flex;
-        justify-content: flex-end;
-        width: 100%;
-    }
-
-    p, h4 {
-        word-break: break-all;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        transition: width 0.5s ease;
-        margin: 0;
-        width: 100%;
-    }
-
-    &:hover .check__box {
-        transform: translateX(0);
-        opacity: 1;
-    }
-
-    &:hover h5 {
-        transform: translateX(-20%);
-    }
-
-    &:hover p, &:hover h4 {
-        width: calc(100% - 30%);
-    }
-}
-
 @media (min-width: 768px) {
 
     header {
@@ -295,16 +212,17 @@ nav, li {
     }
 
     .dish__cards {
+
+        p, h4, h5 {
+            font-size: 1.1rem;
+        }
+
         .check__box {
             width: 8%;
 
             i {
-                font-size: 1.3rem;
+               font-size: 1.5rem;
             }
-        }
-
-        p, h4, h5 {
-            font-size: 1.1rem;
         }
 
         &:hover h5 {
